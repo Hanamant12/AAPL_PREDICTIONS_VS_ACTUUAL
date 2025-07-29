@@ -1,0 +1,12 @@
+import streamlit as st
+
+st.title("Multi-Stock Price Prediction Dashboard")
+
+stock_symbol = st.selectbox(
+    "Choose Stock Symbol",
+    ("AAPL", "MSFT", "TSLA")
+)
+
+st.write(f"You selected {stock_symbol}")
+
+st.write("This is a placeholder for loading the LSTM model and predictions for the selected stock.")
